@@ -1,38 +1,132 @@
-.App {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #bdedff;
+  
+}
+.todo-app{
+  width: 500px;
+  margin: 32px auto; 
+}
+.title{
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffff;
+}
+
+.loadMain{
+  width: 500px;
+  margin: 50px auto; 
+}
+
+.loadMain .loading {
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 32% 9px;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.levelMain{
+  width: 500px;
+  margin: 32px auto;
+}
+.level {
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 10% 12px;
+  padding: 30px;
+}
+.level h4{
+  margin: 0;
+  padding: 12px 0px;
+}
+.level select{
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  outline: 4px solid #bdedff;
+  border: none;
+  padding: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.level button{
+  background-color: #bdedff;
+  padding: 6px 24px;
+  border: 2px solid #9ae1fb;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 16px 4px;
+  margin-left: 76%;
+}
+.level button:hover{
+  background-color: #99dff8f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.questionsMain{
+  width: 600px;
+  margin: 32px auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.questions{
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 10% 12px;
+  padding: 32px;
+}
+.questions .heading{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 3px solid #bdedff;
+  border-radius: 8px;
+  padding: 12px 6px;
+}
+.questions .heading h3{
+  margin: 0px 4px;
+}
+.questions form{
+  padding: 0px 48px;
+}
+.questions input{
+  margin-right: 12px;
+}
+.questions .btn{
+  background-color: #bdedff;
+  padding: 6px 24px;
+  border: 2px solid #9ae1fb;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 16px 4px;
+  margin-left: 86%;
 }
 
-.App-link {
-  color: #61dafb;
+.scoreMain{
+  width: 500px;
+  margin: 32px auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score{
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 10% 12px;
+  padding: 30px;
+}
+.score h3{
+  padding-left: 4px;
+}
+.score button{
+  background-color: #bdedff;
+  padding: 6px 16px;
+  border: 2px solid #9ae1fb;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 24px 4px;
+  margin-left: 68%;
 }
