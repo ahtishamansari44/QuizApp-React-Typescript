@@ -10,18 +10,21 @@ const Questions:React.FC<propsType> = ({question, option, curStep, questuinCallb
     }
 
     return (
-            <div className="questionsMain">
-            <div className="questions">
-                <h1>Quiz</h1>
-                <div className="heading">
-                <h3>Q.{++curStep}) </h3>
-                <h3><span>{question}</span></h3>
+            <div className="container-fluid">
+            <div className="row py-4 mt-1">
+            <div className="col-sm-12 col-md-1 col-lg-2"></div>
+            <div className="col-sm-12 col-md-10 col-lg-8 px-lg-5">
+            <div className="questions mx-lg-5">
+            <h2 className="display-4 py-2 mb-3">Quiz</h2>
+                <div className="heading my-4">
+                <h4 className="display-5 ">Q.{++curStep}) </h4>
+                <h4 className="display-5 "><span>{question}</span></h4>
                 </div>
                 <form onSubmit={questuinCallback}>
                    {
                        option.map((opt:string, ind:number)=>{
                            return (
-                               <h4 key={ind}>
+                               <h5 key={ind}>
                                <label>
                                    <input 
                                    type="radio" 
@@ -33,12 +36,19 @@ const Questions:React.FC<propsType> = ({question, option, curStep, questuinCallb
                                     />
                                    {opt}
                                </label>
-                               </h4>
+                               </h5>
                            )
                        })
                    }
-                   <input type="submit" className="btn" value="Next" onClick={()=>handleCurrectAns(selectAwnser)} />
+                   
+                   <div className="d-flex flex-row-reverse bd-highlight">
+                   <input type="submit" className="btn btn-bg px-4 my-4 " value="Next" onClick={()=>handleCurrectAns(selectAwnser)} />
+                 </div>
                 </form>
+            </div>           
+            </div>
+            <div className="col-sm-12 col-md-1 col-lg-2"></div>
+                
             </div>
             </div>
     );
